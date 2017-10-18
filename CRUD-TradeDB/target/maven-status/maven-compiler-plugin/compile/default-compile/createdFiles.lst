@@ -1,0 +1,13 @@
+upskills\autotagging\dao\impl\HbnTradeDao.class
+upskills\autotagging\model\Issue.class
+upskills\autotagging\service\impl\IssueServiceImpl.class
+upskills\autotagging\service\TradeService.class
+upskills\autotagging\dao\impl\AbstractHbnDao.class
+upskills\autotagging\dao\impl\HbnIssueDao.class
+upskills\autotagging\dao\IssueDao.class
+upskills\autotagging\dao\Dao.class
+upskills\autotagging\model\TradeId.class
+upskills\autotagging\service\IssueService.class
+upskills\autotagging\service\impl\TradeServiceImpl.class
+upskills\autotagging\dao\TradeDao.class
+upskills\autotagging\model\Trade.class
