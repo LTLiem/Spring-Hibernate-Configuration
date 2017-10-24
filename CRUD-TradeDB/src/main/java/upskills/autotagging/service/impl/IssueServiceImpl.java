@@ -37,8 +37,7 @@ public class IssueServiceImpl implements IssueService {
 
 	@Override
 	public List<Issue> getAllIssue() {
-		issuesDao.getAll();
-		return null;
+		return issuesDao.getAll();
 	}
 
 }

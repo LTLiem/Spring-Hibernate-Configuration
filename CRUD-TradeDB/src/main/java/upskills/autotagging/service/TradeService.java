@@ -7,13 +7,13 @@ import upskills.autotagging.model.TradeId;
 
 public interface TradeService {
 	
-	public void createAccount(Trade trade);
+	public void createTrade(Trade trade);
 	
-	public void deleteAccount(Trade trade);
+	public void deleteTrade(Trade trade);
 	
-	public void updateAccount(Trade trade);
+	public void updateTrade(Trade trade);
 	
-	public List<Trade> getAllAccount(); 
+	public List<Trade> getAllTrade(); 
 	
 	public Trade getTradeByNbAndField(TradeId tradeId);
 	

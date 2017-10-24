@@ -19,22 +19,22 @@ public class TradeServiceImpl implements TradeService {
 	private TradeDao tradeDao;
 
 	@Override
-	public void createAccount(Trade trade) {
+	public void createTrade(Trade trade) {
 		tradeDao.create(trade);
 	}
 
 	@Override
-	public void deleteAccount(Trade trade) {
+	public void deleteTrade(Trade trade) {
 		tradeDao.delete(trade);		
 	}
 
 	@Override
-	public void updateAccount(Trade trade) {
+	public void updateTrade(Trade trade) {
 		tradeDao.update(trade);
 	}
 
 	@Override
-	public List<Trade> getAllAccount() {
+	public List<Trade> getAllTrade() {
 		return tradeDao.getAll();
 	}
 

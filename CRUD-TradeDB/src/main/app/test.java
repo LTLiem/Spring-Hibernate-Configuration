@@ -1,5 +1,6 @@
 import java.io.File;
 import java.net.URL;
+import java.util.List;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -24,21 +25,26 @@ public class test {
 //		
 		ApplicationContext context = new FileSystemXmlApplicationContext("classpath:applicationContext.xml");
 		
-		Object obj = context.getBean("issueService");
-		IssueService issueService = context.getBean(IssueService.class);
+		//Object obj = context.getBean("issueService");
+		IssueService issueService = context.getBean(IssueService.class);		
+		TradeService tradeService = context.getBean(TradeService.class);
 		
-		System.out.println(obj.getClass());
-		System.out.println(issueService.getClass());
+		//System.out.println(obj.getClass());
+		//System.out.println(issueService.getClass());
 		
-		Issue issue = new Issue();
-		issue.setFieldValues("test add new issue 1000");
+		//Issue issue = new Issue();
+		//issue.setFieldValues("test add new issue 1001");
 		
-		issueService.createIssue(issue);
+		//issueService.createIssue(issue);
 
 		//IssueService issueService;
 		//System.out.println("Load config");
 		
-		//List listIssue = (List) issueService.getAllIssue();
+		List listIssue = (List) issueService.getAllIssue();
+		System.out.println(listIssue.size());
+		
+		List trades = (List) tradeService.getAllTrade();
+		System.out.println(trades.size());
 		
 	}
 
